@@ -1,0 +1,73 @@
+.hero {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ),    
+    url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    
+    @media screen and (min-width: 768px) and  {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+.head {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+    width: 360px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    @media screen and (min-width: 1600px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
+}
+
+.btn-primary {
+    min-width: 200px;
+    display: inline-block;
+    padding: 10px 32px ;
+    border: 1px solid transparent;
+    font-family: inherit;
+    background: var(--titel-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    cursor:pointer;
+    text-align: center;
+&:hover,
+&:focus {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+} 

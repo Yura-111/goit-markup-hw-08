@@ -1,0 +1,117 @@
+.nav {
+    display: flex;
+    align-items: center;
+&__main {
+    display: flex;
+}
+
+&__sit {
+    display: flex;
+    align-items: center;
+}
+
+&__item--color &__link--blue {
+    color: var(--titel-text-color);
+}
+
+&__item--color &__link--blue::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--titel-text-color);
+}
+
+&__item--color {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+&__item--color a {
+    text-decoration: none;
+}
+
+&__mail {
+    color: #757575;
+    text-decoration: none;
+    display: flex;   
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&:hover .nav__mails,
+&:focus .nav__mails {
+    fill: #2196F3;
+}
+}
+
+&__mails {
+    fill: #AFB1B8;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__tel {
+    color: #757575;
+    text-decoration: none;
+    display: flex;   
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+&:hover .nav__telphon,
+&:focus .nav__telphon {
+        fill: #2196F3;
+}
+}
+
+&__telphon {
+    fill: #AFB1B8;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+&__item {
+    position: relative;
+& + & {
+    margin-left: 50px;
+}
+&--color:hover,
+&--color:focus {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+}
+
+&__link--blue:focus,
+&__link--blue:hover {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+
+&__link--blue:focus,
+&__link--blue:hover {
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+}
