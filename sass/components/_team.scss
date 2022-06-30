@@ -13,11 +13,16 @@
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 0.85px;
+    font-size: 22px;
+    line-height: 0.96px;
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
+    
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+        line-height: 0.85px;
+    }
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
         font-size: 36px;
