@@ -73,6 +73,11 @@
 
     &-address {
         text-decoration: none;
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
