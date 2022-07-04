@@ -1,15 +1,28 @@
 .modal {
-    position: absolute;
+    position: fixed;
     padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    z-index: 1;
+    visibility: visible;
+    overflow-y: scroll;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (max-width: 479px) {
+        height: 85%;
+        width: 90%;
+        }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-close {

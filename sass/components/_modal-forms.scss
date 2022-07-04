@@ -6,21 +6,29 @@
 .text-modal {
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    @media screen and (min-width: 480px) {
+        font-size: 20px;
+        line-height: 1.15;
+        }
 }
 
 .modal-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: 1.18;
     letter-spacing: 0.01em;
     color: #757575;
+    @media screen and (max-width: 480) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 .input-box {
@@ -84,26 +92,34 @@
 
 .label-checkbox {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     align-items:center;
     margin-top: 10px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 9px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: #757575;
-    cursor:pointer;
+    cursor:pointer; 
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.17;
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+        }
+
 }
 
 .checkbox-box {
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-right: 7px;
+    margin-right: 2px;
     width: 16px;
     height: 15px;
-    margin-right: 9 px;
     align-content: center;
-    width: 16px;
-    height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
     cursor:pointer;
@@ -127,13 +143,20 @@ border-color: var(--titel-text-color);
 
 .checkbox-icon {
     fill: transparent;
-    width: 16px;
-    height: 15px;
+    width: 12px;
+    height: 11px;
+    @media screen and (min-width: 480px) {
+        width: 16px;
+        height: 15px;
+    }
 }
 
 .checkbox-link {
     color: var(--titel-text-color);
-    margin-left: 5px;
+    @media screen and (max-width: 429px) {
+        margin-left: 24px;
+    }
+    
 }
 
 .btn-modal {

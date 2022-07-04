@@ -41,58 +41,68 @@
                         </svg>+38 096 111 11 11</a>
                     </li>
                 </ul> 
-                <!-- <button class="mob-btn" type="button">
+
+                                    <!-- Menu -->
+
+                <button class="mob-btn" type="button" data-manu-open>
                     <svg class="mob" width="40" height="40">
                         <use href="./images/icons.svg#icon-mob-menu"></use>
                     </svg>
                 </button>
-                <div class="mobile-manu">
-                    <button class="mob-x-btn" type="button">
-                        <svg class="icon-mob-x" width="40" height="40">
-                            <use href="./images/icons.svg#icon-mob-x"></use>
-                        </svg>
-                    </button>
-                    <ul class="mob-manu clean ">
-                        <li class="mob__item"><a href="" class="mob__item nav__link--blue">Студия</a>
-                        </li>
-                        <li class="mob__item"><a href="./portfolio.html" class="mob__item--color">Портфолио</a>
-                        </li>                    
-                        <li class="mob__item"><a href="" class="mob__item--color">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="mob-nav clean">
-                        <li class="nav__item">
-                            <a class="nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__tel" href="+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul> 
-                    <ul class="mob-soc clean"> -->
-                        <!-- <li class="mob-soc__list">
-                            <a href="" class="mob-soc__link">Instagram</a>
-                        </li>
-                        <li class="mob-soc__list">
-                            <a href="" class="mob-soc__link">Twitter</a>
-                        </li>
-                        <li class="mob-soc__list">
-                            <a href="" class="mob-soc__link">Facebook</a>
-                        </li>
-                        <li class="mob-soc__list">
-                            <a href="" class="mob-soc__link">LinkedIn</a>
-                        </li> -->
-                    </ul> 
+                <div class="mobile-manu is-hidden" data-manu>
+                    <div class="container">
+                        <div>
+                            <button class="mob-x-btn" type="button" data-manu-close>
+                                <svg class="icon-mob-x" width="40" height="40">
+                                    <use href="./images/icons.svg#icon-mob-x"></use>
+                                </svg>
+                            </button>
+                            <ul class="mob-manu clean ">
+                                <li class="mob__item"><a href="" class="mob__link--blue">Студия</a>
+                                </li>
+                                <li class="mob__item"><a href="./portfolio.html" class="mob__item--color">Портфолио</a>
+                                </li>                    
+                                <li class="mob__item"><a href="" class="mob__item--color">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <ul class="mob-nav clean">
+                                <li class="">
+                                    <a class="mob-nav__tel" href="+380961111111">+38 096 111 11 11</a>
+                                </li>
+                                <li class="">
+                                    <a class="mob-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul> 
+                            <ul class="mob-soc clean"> 
+                                <li class="mob-soc__list">
+                                    <a href="" class="mob-soc__link">Instagram</a>
+                                </li>
+                                <li class="mob-soc__list">
+                                    <a href="" class="mob-soc__link">Twitter</a>
+                                </li>
+                                <li class="mob-soc__list">
+                                    <a href="" class="mob-soc__link">Facebook</a>
+                                </li>
+                                <li class="mob-soc__list">
+                                    <a href="" class="mob-soc__link">LinkedIn</a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- <main>
+        <main>
             <section class="hero">
             <h1 class="head">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="btn-primary" data-modal-open>Заказать услугу</button>
-            </section> -->
+            </section> 
 
-            <!-- <section class="skills">
+            <section class="skills">
                 <div class="container">                    
                     <h2 class="visually-hidden"></h2>
                     <ul class="clean features">
@@ -137,9 +147,9 @@
                         </li>            
                     </ul>
                 </div>
-            </section> -->
+            </section> 
         
-            <!-- <section class="interactive">
+            <section class="interactive">
                 <div class="container">
                     <h2 class="head-name">Чем мы занимаемся</h2>
                     <ul class="clean engage">
@@ -163,7 +173,7 @@
                     <h2 class="head-name">Наша команда</h2>                    
                     <ul class="team clean">
                         <li class="team__group">                            
-                            <img srcset="./images/img4-1x.jpg 1x, ./images/img4-2x.jpg 2x"  src="./images/img4-1x.jpg" alt="мужчина" width="270" class="team__img">
+                            <img  src="./images/img4-1x.jpg" alt="мужчина" width="270" class="team__img">
                             <div class="team__card">
                                 <h3 class="team__name">Игорь Демьяненко</h3>                                    
                                 <p lang="en" class="team__text">Product Designer</p>
@@ -201,7 +211,7 @@
                         </li>
                         
                         <li class="team__group">
-                            <img srcset="./images/img5-1x.jpg 1x, ./images/img5-2x.jpg 2x"  src="./images/img5-1x.jpg" alt="женщина" width="270" class="team__img">
+                            <img   src="./images/img5-1x.jpg" alt="женщина" width="270" class="team__img">
                             <div class="team__card">
                                 <h3 class="team__name">Ольга Репина</h3>
                                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -238,7 +248,7 @@
                             </div>
                         </li>                        
                         <li class="team__group">
-                            <img srcset="./images/img6-1x.jpg 1x, ./images/img6-2x.jpg 2x" src="./images/img6-1x.jpg" alt="мужчина" width="270" class="team__img">
+                            <img  src="./images/img6-1x.jpg" alt="мужчина" width="270" class="team__img">
                             <div class="team__card">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p lang="en" class="team__text">Marketing</p>
@@ -276,7 +286,7 @@
                         </li>
                         
                         <li class="team__group">
-                            <img srcset="./images/img7-1x.jpg 1x, ./images/img7-2x.jpg 2x" src="./images/img7-1x.jpg" alt="мужчина" width="270" class="team__img">
+                            <img  src="./images/img7-1x.jpg" alt="мужчина" width="270" class="team__img">
                             <div class="team__card">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p lang="en" class="team__text">UI Designer</p>
@@ -491,5 +501,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/manu.js"></script>
     </body>
-</html> -->
+</html>
