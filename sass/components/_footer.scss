@@ -84,13 +84,15 @@
 .box-nav {
 
     flex-direction:column;
-
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px; 
+    }
     @media screen and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-
     }
+    
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
     }
@@ -126,9 +128,6 @@
 &-footer {
     margin-top: 20px;
     font-style: normal;
-    @media screen and (max-width: 767px) {
-        margin-bottom: 60px; 
-    }
 }
 &-item {
     @media screen and (max-width: 1199px) {
